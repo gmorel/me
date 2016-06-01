@@ -10,6 +10,7 @@
 
 import home from './home';
 import about from './about';
+import blog from './blog';
 import error from './error';
 
 const routes = {
@@ -19,7 +20,7 @@ const routes = {
   children: [
     home,
     about,
-    error,
+    blog,
   ],
 
 };
