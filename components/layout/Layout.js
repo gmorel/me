@@ -24,12 +24,34 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout" ref="root">
-        <div className="mdl-layout__inner-container">
-          <Header />
-          <main {...this.props} className={s.content} />
+<div className="row" ref="root">
+        <div className="profile col-md-3 wow fadeInDown">
+        <div className="profile-image">
+            <img src="/images/gmorel-transparency.png"/>
         </div>
-      </div>
+        <div className="profile-info">
+            <div className="name-job">
+                <h1>Guillaume MOREL</h1>
+                <span className="job"> Lead Developer</span>
+            </div>
+            <div className="social-icons">
+                <a href="#"><i className="fa fa-facebook"></i> </a>
+                <a href="#"><i className="fa fa-twitter"></i> </a>
+                <a href="#"><i className="fa fa-behance"></i> </a>
+                <a href="#"><i className="fa fa-dribbble"></i> </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tab-container" className="col-md-9">
+        <Header/>
+
+        <main {...this.props} className={s.content} />
+
+    </div>
+</div>
+
     );
   }
 }

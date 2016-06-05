@@ -8,7 +8,7 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import { Content } from '../../components';
+import { Blog } from '../../components';
 
 export default {
 
@@ -21,8 +21,10 @@ export default {
           const content = require('./index.md');
           resolve({
             title: content.title,
-            component: Content,
-            props: content,
+            postTitle: content.postTitle,
+            postDate: content.postDate,
+            component: Blog,
+            props: content
           });
         } catch (err) {
           reject(err);

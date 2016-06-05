@@ -13,3 +13,8 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+
+
+.blog-post img {
+    width: 100%;
+}

@@ -2,7 +2,8 @@
 title: Blog
 ---
 
-## Leading our Symfony's API Behat tests to be more readable with JSON Schema
+postTitle: Leading our Symfony's API Behat tests to be more readable with JSON Schema
+postDate: December 10, 2015
 
 ### Do you really trust your REST APIs ? 
 
@@ -124,7 +125,7 @@ But we want to test the `sort` feature which can sort a repository list by
 - `pushed`
 - `full_name`
 
-We would have in [Be:hat](http://docs.behat.org):
+We would have in [Behat](http://docs.behat.org):
 - 1 Feature : `List all organization repositories from different filter`
 - 5 Scenarios : `Sort by created`, `Sort by updated`, `Sort by pushed`, `Sort by full_name` and `Sort by default`
 
@@ -132,11 +133,11 @@ Something like this:
 
 #### Optimistic way
 
-![Optimistic way](/static/blog/json-schema/optimistic.png)
+![Optimistic way](/blog/json-schema/optimistic.png)
 
 #### Pessimistic way
 
-![Pessimistic way](/static/blog/json-schema/pessimistic.png)
+![Pessimistic way](/blog/json-schema/pessimistic.png)
 
 Did you read it ? 
 
@@ -173,7 +174,7 @@ So we can reduce their [cognitive load]()https://en.wikipedia.org/wiki/Cognitive
 And this while remaining able to detect functional regressions.
 
 What about replacing the pessimistic way ([985 lines]((https://github.com/gmorel/json-schema-afsy/blob/develop/test/functional/repo_list.legacy.pessimistic.feature))).
-![Pessimistic way](/static/blog/json-schema/pessimistic.png)
+![Pessimistic way](/blog/json-schema/pessimistic.png)
 
 By this:
 

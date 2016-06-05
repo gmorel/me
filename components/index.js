@@ -9,4 +9,6 @@
  */
 
 export Content from './content/Content';
+export Blog from './blog/Blog';
+export Home from './home/Home';
 export Layout from './layout/Layout';

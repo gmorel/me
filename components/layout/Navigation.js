@@ -24,10 +24,21 @@ class Navigation extends React.Component {
   render() {
     return (
       <nav className="mdl-navigation" ref="root">
-        <Link className="mdl-navigation__link" to="/">Home</Link>
-        <Link className="mdl-navigation__link" to="/blog">Blog</Link>
-        <Link className="mdl-navigation__link" to="/about">About</Link>
-        <Link className="mdl-navigation__link" to="/not-found">Not Found</Link>
+        <ul className="top-menu wow fadeInRight">
+          <li>
+            <Link className="selected" to="/">
+              <i className="fa fa-user"></i> <br/> <span className="hidden-xs"> About Me </span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog">
+              <i className="fa fa-comments"></i> <br/> <span className="hidden-xs"> Blog</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/not-found">Not Found</Link>
+          </li>
+        </ul>
       </nav>
     );
   }

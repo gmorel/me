@@ -21,15 +21,18 @@ class Header extends React.Component {
     window.componentHandler.downgradeElements(this.refs.root);
   }
 
+      //<header className="mdl-layout__header" ref="root">
+      //  <div className="mdl-layout__header-row">
+      //    <span className="mdl-layout-title">React Static Boilerplate</span>
+      //    <div className="mdl-layout-spacer"></div>
+      //    <Navigation />
+      //  </div>
+      //</header>
   render() {
     return (
-      <header className="mdl-layout__header" ref="root">
-        <div className="mdl-layout__header-row">
-          <span className="mdl-layout-title">React Static Boilerplate</span>
-          <div className="mdl-layout-spacer"></div>
-          <Navigation />
+        <div ref="root">
+            <Navigation />
         </div>
-      </header>
     );
   }
 
