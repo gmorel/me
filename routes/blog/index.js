@@ -23,6 +23,7 @@ export default {
             title: content.title,
             postTitle: content.postTitle,
             postDate: content.postDate,
+            tags: content.tags,
             component: Blog,
             props: content
           });

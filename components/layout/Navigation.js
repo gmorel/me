@@ -23,7 +23,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <nav className="mdl-navigation" ref="root">
+      <nav ref="root">
         <ul className="top-menu wow fadeInRight">
           <li>
             <Link className="selected" to="/">

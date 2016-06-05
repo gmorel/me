@@ -1,55 +1,34 @@
 ---
-title: Blog
+postDate: "May 10th, 2016"
+tags: "Symfony2 | Symfony3 | Quality Assurance | Behat3 | Functional Tests"
+postTitle: "Leading our API tests to be more readable with JSON Schema"
 ---
 
-postTitle: Leading our Symfony's API Behat tests to be more readable with JSON Schema
-postDate: December 10, 2015
+### Do you really trust your Symfony REST APIs ? 
 
-### Do you really trust your REST APIs ? 
-
-With the rise of Micro Services and Web Client. Rest APIs have the wind aft.
+With the rise of Micro Services and Web Client. Rest APIs becomes a key for business.
 Clients must be able to trust their APIs. Quality assurance shall bring this trust.
+
 
 But how to keep your API well tested without doing over-engineering ?
 And then get functional test suits too difficult to maintain ?
 
-### A simple REST API: `api.github.com/users/`
+### A simple REST API: 
+
+`GET api.github.com/users/{username}`
 
 We want to test it. Making sure we are receiving:
-- a `200 OK` 
+- a `200 OK` HTTP code
 - a `application/json` as content type header
 - the expected payload 
 
-[http](https://github.com/jkbrzt/httpie) https://api.github.com/users/gmorel
+For example: [http](https://github.com/jkbrzt/httpie) https://api.github.com/users/gmorel
 
 ```header
 HTTP/1.1 200 OK
-Access-Control-Allow-Origin: *
-Access-Control-Expose-Headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
-Cache-Control: public, max-age=60, s-maxage=60
-Content-Encoding: gzip
-Content-Security-Policy: default-src 'none'
 Content-Type: application/json; charset=utf-8
-Date: Thu, 02 Jun 2016 20:10:13 GMT
-ETag: W/"f2dd6c7c0775b322b4b34434c40b603a"
-Last-Modified: Thu, 26 May 2016 09:24:41 GMT
-Server: GitHub.com
-Status: 200 OK
-Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
-Transfer-Encoding: chunked
-Vary: Accept
-Vary: Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: deny
-X-GitHub-Media-Type: github.v3
-X-GitHub-Request-Id: 58B30E9E:B211:B519A72:575092A5
-X-RateLimit-Limit: 60
-X-RateLimit-Remaining: 59
-X-RateLimit-Reset: 1464901813
-X-Served-By: 2811da37fbdda4367181b328b22b2499
-X-XSS-Protection: 1; mode=block
 ```
-
+-------------
 ```json
 {
     "avatar_url": "https://avatars.githubusercontent.com/u/2279794?v=3", 
@@ -95,7 +74,7 @@ We could test this end point functionally via [Behat](http://docs.behat.org) and
         And the response should be in JSON
         And the JSON node "login" should be equal to "gmorel"
         And ...
-        And the JSON node "location" should be equal to "France"
+        And the JSON node "location" should be equal to "Marseille (France)"
 ```
 
 #### Testing our JSON REST API end point
@@ -117,7 +96,7 @@ Up to there it's pretty easy.
 
 And if we wanted to test a JSON REST API listing GitHub users ?
 
-[http](https://github.com/jkbrzt/httpie) https://api.github.com/users/rezzza/repos\?visibility=public
+GET https://api.github.com/users/rezzza/repos\?visibility=public
 
 But we want to test the `sort` feature which can sort a repository list by
 - `created`
@@ -151,7 +130,7 @@ We are quickly getting duplicated assertions in every feature's scenarios.
 Fearing potential functional regressions. We are getting exhaustive.
 
 However **an exhaustive test becomes rapidly unreadable**.
-The [cognitive load]()https://en.wikipedia.org/wiki/Cognitive_load becoming too heavy.
+The [cognitive load](https://en.wikipedia.org/wiki/Cognitive_load) becoming too heavy.
 Leads any developer to miss (voluntarily or not) the essence of the test.
 Leading in the long run to have tests hard to maintain. Especially if several developer are working on them.
 After several years, we even need to refactor our tests. In order to lead to to be more readable.
@@ -170,7 +149,7 @@ Now few questions:
 
 #### And if we could write shorter functional tests ?
 
-So we can reduce their [cognitive load]()https://en.wikipedia.org/wiki/Cognitive_load. And highlight what really matters.
+So we can reduce their [cognitive load](https://en.wikipedia.org/wiki/Cognitive_load). And highlight what really matters.
 And this while remaining able to detect functional regressions.
 
 What about replacing the pessimistic way ([985 lines]((https://github.com/gmorel/json-schema-afsy/blob/develop/test/functional/repo_list.legacy.pessimistic.feature))).

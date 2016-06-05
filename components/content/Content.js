@@ -14,7 +14,7 @@ import Layout from '../layout/Layout.js';
 function Content({ title, html }) {
   return (
     <Layout>
-      <h1>{title}</h1>
+      <h1>{title}4</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );

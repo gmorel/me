@@ -32,13 +32,13 @@ class Layout extends React.Component {
         <div className="profile-info">
             <div className="name-job">
                 <h1>Guillaume MOREL</h1>
-                <span className="job"> Lead Developer</span>
+                <span className="job"> Lead Developer Symfony3</span>
             </div>
             <div className="social-icons">
-                <a href="#"><i className="fa fa-facebook"></i> </a>
-                <a href="#"><i className="fa fa-twitter"></i> </a>
-                <a href="#"><i className="fa fa-behance"></i> </a>
-                <a href="#"><i className="fa fa-dribbble"></i> </a>
+                <a href="https://github.com/gmorel"><i className="fa fa-github"></i> </a>
+                <a href="https://twitter.com/guilmorel"><i className="fa fa-twitter"></i> </a>
+                <a href="https://www.linkedin.com/in/guillaume-morel-13299a108"><i className="fa fa-linkedin"></i> </a>
+                <a href="https://www.viadeo.com/p/0023trofou7g5bi/"><i className="fa fa-viadeo"></i> </a>
             </div>
         </div>
     </div>

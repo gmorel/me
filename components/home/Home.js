@@ -20,9 +20,6 @@ function Home({ title, html }) {
     <Layout>
         <div id="about" className="content col-md-12 fadeInUp">
             <div className="row">
-                <div className="page-title">
-                    <h2>{title}</h2>
-                </div>
                 <div className="col-md-12 page">
                     <div className="col-md-4 about-info">
                         <h2 className="section-title">About Info</h2>
