@@ -21,9 +21,14 @@ class Footer extends React.Component {
   }
 
   render() {
+    var currentYear = new Date().getFullYear();
+
     return (
          <footer className="footer" ref="root">
-           <p> Copyright © 2016 All right reserved </p>
+           <p> Copyright © {currentYear} All right reserved </p>
+           <p className="made-with">
+             Made with <img src="/images/react-logo.png"/>
+           </p>
          </footer>
     );
   }

@@ -32,7 +32,7 @@ class Layout extends React.Component {
         <div className="profile-info">
             <div className="name-job">
                 <h1>Guillaume MOREL</h1>
-                <span className="job"> Lead Developer Symfony3</span>
+                <span className="job"> Lead Developer</span>
             </div>
             <div className="social-icons">
                 <a href="https://github.com/gmorel"><i className="fa fa-github"></i> </a>

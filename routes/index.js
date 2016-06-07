@@ -20,8 +20,8 @@ const routes = {
   children: [
     home,
     about,
-    blog,
-  ],
+    blog
+  ]
 
 };
 

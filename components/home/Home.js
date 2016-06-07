@@ -13,112 +13,166 @@ import Layout from '../layout/Layout.js';
 import Footer from '../layout/Footer.js';
 
 function Home({ title, html }) {
-    var styleSkill1 = {
+  var styleSkillSymfony3 = {
+    width: '90%'
+  };
+  var styleSkillMySQL = {
+    width: '90%'
+  };
+  var styleSkillElasticSearch = {
     width: '60%'
   };
+  var styleSkillRedis = {
+    width: '70%'
+  };
+  var styleSkillMongoDB = {
+    width: '50%'
+  };
+  var styleSkillAngular2 = {
+    width: '50%'
+  };
+  var styleSkillOOP = {
+    width: '80%'
+  };
+  var styleSkillDesignPattern = {
+    width: '70%'
+  };
+  var styleSkillDDD = {
+    width: '80%'
+  };
+
   return (
     <Layout>
         <div id="about" className="content col-md-12 fadeInUp">
             <div className="row">
+                <div className="col-md-12 col-sm-12 col-xs-12 services">
+                        <h2 className="section-title">What I’m Doing</h2>
+
+                        <div className="service col-md-4 col-sm-6">
+                            <i className="fa fa-rocket"></i>
+                            <span>
+                                <b>Quality Assurance</b>
+                                <p>Unit/Functional Testing</p>
+                            </span>
+                        </div>
+                        <div className="service col-md-4 col-sm-6">
+                            <i className="fa fa-users"></i>
+                            <span>
+                                <b>Team Management</b>
+                                <p>Grow TeamPlay</p>
+                            </span>
+                        </div>
+                        <div className="service col-md-4 col-sm-6">
+                            <i className="fa fa-graduation-cap"></i>
+                            <span>
+                                <b>Coaching</b>
+                                <p>Knowledge sharing</p>
+                            </span>
+                        </div>
+
+                        <div className="service col-md-4 col-sm-6">
+                            <i className="fa fa-unlock"></i>
+                            <span>
+                                <b>REST API</b>
+                                <p>Interoperability</p>
+                            </span>
+                        </div>
+                        <div className="service col-md-4 col-sm-6">
+                            <i className="fa fa-gears"></i>
+                            <span>
+                                <b>Software Architecture</b>
+                                <p>Reduce technical debt</p>
+                            </span>
+                        </div>
+                        <div className="service col-md-4 col-sm-6">
+                            <i className="fa fa-stethoscope"></i>
+                            <span>
+                                <b>DevOps</b>
+                                <p>Docker / Linux</p>
+                            </span>
+                        </div>
+
+                    </div>
+
                 <div className="col-md-12 page">
                     <div className="col-md-4 about-info">
                         <h2 className="section-title">About Info</h2>
                         <ul className="info-list">
-                            <li>Full Name : <span>Chris Johnson</span></li>
-                            <li>Birthday : <span>21 January 1985</span></li>
-                            <li>Job : <span>Frelancer</span></li>
-                            <li>Website : <span>www.chrisjohnson.com</span></li>
-                            <li>Email : <span>chris@domain.com</span></li>
-                            <li>Skype : <span>chrisjohnson85</span></li>
+                            <li>Location : <span>Marseille (France)</span></li>
+                            <li>Currently Learning : <span>Event Storming</span></li>
                         </ul>
                     </div>
                     <div className="col-md-8 my-skills">
                         <h2 className="section-title">My Skills</h2>
+
+                        <h3 className="section-group">Framework</h3>
                         <ul className="skill-list">
                             <li>
-                                <h3>Photoshop</h3>
+                                <h4>Symfony 3 <span>PHP</span></h4>
                                 <div className="progress">
-                                    <div className="percentage" style={styleSkill1}></div>
+                                    <div className="percentage" style={styleSkillSymfony3}></div>
                                 </div>
                             </li>
                             <li>
-                                <h3>Dreamviewer</h3>
+                                <h4>Angular2 <span>Javascript</span></h4>
                                 <div className="progress">
-                                    <div className="percentage" style={styleSkill1}></div>
+                                    <div className="percentage" style={styleSkillAngular2}></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 className="section-group">Database</h3>
+                        <ul className="skill-list">
+                            <li>
+                                <h4>MySQL</h4>
+                                <div className="progress">
+                                    <div className="percentage" style={styleSkillMySQL}></div>
                                 </div>
                             </li>
                             <li>
-                                <h3>After Effect</h3>
+                                <h4>ElasticSearch <span>NoSQL</span></h4>
                                 <div className="progress">
-                                    <div className="percentage" style={styleSkill1}></div>
+                                    <div className="percentage" style={styleSkillElasticSearch}></div>
                                 </div>
                             </li>
                             <li>
-                                <h3>Illustrator</h3>
+                                <h4>Redis <span>NoSQL</span></h4>
                                 <div className="progress">
-                                    <div className="percentage" style={styleSkill1}></div>
+                                    <div className="percentage" style={styleSkillRedis}></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Mongo DB <span>NoSQL</span></h4>
+                                <div className="progress">
+                                    <div className="percentage" style={styleSkillMongoDB}></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 className="section-group">Architecture</h3>
+                        <ul className="skill-list">
+                            <li>
+                                <h4>Object-Oriented Programming</h4>
+                                <div className="progress">
+                                    <div className="percentage" style={styleSkillOOP}></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Design Pattern</h4>
+                                <div className="progress">
+                                    <div className="percentage" style={styleSkillDesignPattern}></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Domain Driven Design <span>DDD</span></h4>
+                                <div className="progress">
+                                    <div className="percentage" style={styleSkillDDD}></div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div className="col-md-12 about-text">
-                        <h2 className="section-title">I’m Web Designer</h2>
-                        <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla auctor libero vitae
-                            erat posuere, sit amet viverra turpis lobortis. Nullam eleifend cursus tellus a egestas.
-                            Donec at elementum orci. Lorem ipsum dolor. <br/><br/>
-                            Aliquam ut purus ex. Aliquam interdum convallis gravida. Curabitur malesuada cursus felis,
-                            non molestie odio consequat id. Donec at elementum orci. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Praesent vitae molestie eros. Class aptent taciti sociosqu ad
-                            litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar feugiat dui vel
-                            egestas. Nulla sit amet risus risus. Nulla auctor libero vitae erat posuere, sit amet
-                            viverra turpis lobortis. Nullam eleifend cursus tellus a egestas. </p>
-                    </div>
 
-                    <div className="col-md-12 col-sm-12 col-xs-12 services">
-                        <h2 className="section-title">What I’m Doing</h2>
-                        <div className="service col-md-4 col-sm-6">
-                            <i className="fa fa-apple"></i>
-                                        <span>
-                                            <b>Applications</b>
-                                            <p>Duis vitae odio gravida</p>
-                                        </span>
-                        </div>
-                        <div className="service col-md-4 col-sm-6">
-                            <i className="fa fa-desktop"></i>
-                                        <span>
-                                            <b>Web Design</b>
-                                            <p>Mauris eleifend dapibus</p>
-                                        </span>
-                        </div>
-                        <div className="service col-md-4 col-sm-6">
-                            <i className="fa fa-picture-o"></i>
-                                        <span>
-                                            <b>Illustrations</b>
-                                            <p>Posuere ac sem nec</p>
-                                        </span>
-                        </div>
-                        <div className="service col-md-4 col-sm-6">
-                            <i className="fa fa-code"></i>
-                                        <span>
-                                            <b>Development</b>
-                                            <p>Curabitur euismod sapien</p>
-                                        </span>
-                        </div>
-                        <div className="service col-md-4 col-sm-6">
-                            <i className="fa fa-search"></i>
-                                        <span>
-                                            <b>Seo Optimization</b>
-                                            <p>Etiam vitae condimentum</p>
-                                        </span>
-                        </div>
-                        <div className="service col-md-4 col-sm-6">
-                            <i className="fa fa-support"></i>
-                                        <span>
-                                            <b>Speed Support</b>
-                                            <p>Praesent nisl turpis</p>
-                                        </span>
-                        </div>
-                    </div>
+
 
                     <Footer/>
 

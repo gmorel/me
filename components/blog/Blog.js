@@ -12,18 +12,18 @@ import React from 'react';
 import Layout from '../layout/Layout.js';
 import Footer from '../layout/Footer.js';
 
-function Blog({ postTitle, postDate, tags, html }) {
+function Blog({ postTitle, postDate, postPictureUrl, tags, html }) {
   return (
     <Layout>
-        <div id="blog" className="content col-md-12">
+        <div id="blog" className="content col-md-12 page">
             <div className="row" className="blog-item">
                 <div className="col-md-12 page">
                     <div className="col-md-12 blog-post">
                         <div className="post-image">
-                            <img src="/blog/json-schema/messy.jpg" alt=""/>
+                            <img src={postPictureUrl} alt={tags}/>
                         </div>
                         <div className="post-title">
-                            <h1>{postTitle}</h1>
+                            <h2>{postTitle}</h2>
                         </div>
                         <div className="post-info">
                             <span>{postDate}</span>
@@ -32,13 +32,14 @@ function Blog({ postTitle, postDate, tags, html }) {
                             <span>{tags}</span>
                         </div>
                         <div dangerouslySetInnerHTML={{ __html: html }} />
+
                     </div>
-
-                    <Footer/>
-
                 </div>
+
             </div>
+            <Footer/>
         </div>
+
     </Layout>
   );
 }
@@ -46,6 +47,7 @@ function Blog({ postTitle, postDate, tags, html }) {
 Blog.propTypes = {
   postTitle: React.PropTypes.string.isRequired,
   postDate: React.PropTypes.string.isRequired,
+  postPictureUrl: React.PropTypes.string.isRequired,
   tags: React.PropTypes.string.isRequired,
   html: React.PropTypes.string.isRequired
 };

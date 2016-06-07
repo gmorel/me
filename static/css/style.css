@@ -254,7 +254,7 @@ ul.top-menu li i{
 }
 
 .page{
-	padding-top:30px;
+	padding-top:21px;
 	padding-bottom: 90px;
 	display: inline-block;
 	min-height: 670px;
@@ -298,7 +298,14 @@ ul.top-menu li i{
 	color:#7F7F7F;
 }
 
-ul.skill-list h3 {
+h3.section-group {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+ul.skill-list h4 {
     display: block;
     margin-bottom: 0;
     font-size: 14px;
@@ -306,12 +313,21 @@ ul.skill-list h3 {
 	font-weight:bold;
 }
 
+ul.skill-list h4 span {
+    color: #7F7F7F;
+	font-size: 10px;
+}
+
+ul.skill-list {
+	margin-left: 30px;
+}
+
 ul.skill-list li {
 	list-style:none;
 }
 
 .progress{
-	margin: 15px 0;
+	margin: 5px 0 15px 0;
 	display: block;
     height: 6px;
     position: relative;
@@ -664,7 +680,7 @@ ul.skill-list li {
 	padding:6px 0;
 }
 
-.blog-post p{
+.blog-post p, .blog-post li{
 	font-size:14px;
 	line-height:24px;
 	color:#7F7F7F;
@@ -673,7 +689,6 @@ ul.skill-list li {
 
 .blog-post ul{
 	margin-left: 24px;
-	font-size:12px;
 }
 
 .blog-post .but-big{
@@ -826,6 +841,10 @@ ul.skill-list li {
 		margin-bottom: 30px;
 	}
 
+	.profile-image img {
+		margin-top: -103px;
+	}
+
 	.my-skills {
 		margin-top:30px;
 	}
@@ -843,6 +862,10 @@ ul.skill-list li {
 
 	.profile{
 		margin-bottom: 30px;
+	}
+
+	.profile-image img {
+		margin-top: -62px;
 	}
 
 	.my-skills {

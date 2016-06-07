@@ -35,14 +35,10 @@ class Navigation extends React.Component {
               <i className="fa fa-comments"></i> <br/> <span className="hidden-xs"> Blog</span>
             </Link>
           </li>
-          <li>
-            <Link to="/not-found">Not Found</Link>
-          </li>
         </ul>
       </nav>
     );
   }
-
 }
 
 export default Navigation;
