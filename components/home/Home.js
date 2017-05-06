@@ -28,8 +28,8 @@ function Home({ title, html }) {
     var styleSkillMongoDB = {
         width: '50%'
     };
-    var styleSkillAngular2 = {
-        width: '50%'
+    var styleSkillAngular4 = {
+        width: '70%'
     };
     var styleSkillOOP = {
         width: '80%'
@@ -105,9 +105,9 @@ function Home({ title, html }) {
                                     </div>
                                 </li>
                                 <li>
-                                    <h4>Angular2 <span>Javascript</span></h4>
+                                    <h4>Angular 4 (AoT/Redux)<span>Javascript</span></h4>
                                     <div className="progress">
-                                        <div className="percentage" style={styleSkillAngular2}></div>
+                                        <div className="percentage" style={styleSkillAngular4}></div>
                                     </div>
                                 </li>
                             </ul>
