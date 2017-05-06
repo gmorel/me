@@ -30,11 +30,11 @@ class Navigation extends React.Component {
               <i className="fa fa-user"></i> <br/> <span className="hidden-xs"> About Me </span>
             </Link>
           </li>
-          <li>
-            <Link to="/blog">
-              <i className="fa fa-comments"></i> <br/> <span className="hidden-xs"> Blog</span>
-            </Link>
-          </li>
+          {/*<li>*/}
+            {/*<Link to="/blog">*/}
+              {/*<i className="fa fa-comments"></i> <br/> <span className="hidden-xs"> Blog</span>*/}
+            {/*</Link>*/}
+          {/*</li>*/}
         </ul>
       </nav>
     );
