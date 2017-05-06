@@ -313,13 +313,13 @@ ul.skill-list h4 {
 	font-weight:bold;
 }
 
-ul.skill-list h4 span {
+.service ul.skill-list h4 span {
     color: #7F7F7F;
 	font-size: 10px;
 }
 
-ul.skill-list {
-	margin-left: 30px;
+.service ul.skill-list {
+	margin-left: 10px;
 }
 
 ul.skill-list li {
@@ -364,7 +364,7 @@ ul.skill-list li {
 }
 
 .services {
-    margin-top: 60px;
+    margin-top: 20px;
 	display: inline-block;
 }
 

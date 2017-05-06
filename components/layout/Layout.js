@@ -25,7 +25,7 @@ class Layout extends React.Component {
   render() {
     return (
 <div className="row" ref="root">
-        <div className="profile col-md-3 wow fadeInDown">
+    <div className="profile col-md-3 wow fadeInDown">
         <div className="profile-image">
             <img src="/images/gmorel-transparency.png"/>
         </div>

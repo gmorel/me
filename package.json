@@ -105,5 +105,8 @@
     "copy-font-awesome-css": "cp node_modules/font-awesome/css/font-awesome.min.css static/css/font-awesome.min.css",
     "copy-font-awesome-fonts": "cp -r node_modules/font-awesome/fonts static/fonts",
     "postinstall": "npm run copy-bootstrap && npm run copy-font-awesome-css && npm run copy-font-awesome-fonts"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0"
   }
 }

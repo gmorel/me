@@ -2,7 +2,7 @@
 postDate: "May 10th, 2016"
 tags: "Symfony2 | Symfony3 | Quality Assurance | Behat3 | Functional Tests"
 postTitle: "Leading our API tests to be more readable with JSON Schema"
-postPictureUrl: "/blog/json-schema/clear.jpg"
+postPictureUrl: "/blog/json-schema/complexity.jpg"
 ---
 
 ### Do you really trust your Symfony REST APIs ? 
