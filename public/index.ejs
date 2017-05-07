@@ -1,24 +1,35 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><%= config.title %></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  </head>
-  <body>
-    <div id="container"></div>
-    <script src="<%= bundle %>"></script>
-    <%_ if (!debug && config.trackingID) { _%>
-    <script>
-      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','<%= config.trackingID %>','auto');ga('send','pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    <%_ } _%>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title><%= config.title %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/isagalaev/highlight.js/master/src/styles/androidstudio.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css"/> <!-- reset css -->
+  <link rel="stylesheet" href="css/magnific-popup.css"/> <!-- magnific popup css -->
+  <link rel="stylesheet" href="css/style.css"/> <!-- template css -->
+
+  <!-- Google Web fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+<div id="wrapper">
+  <div id="container" class="container"></div>
+</div>
+
+<script src="<%= bundle %>"></script>
+</body>
 </html>

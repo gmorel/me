@@ -9,8 +9,8 @@
  */
 
 import React from 'react';
-import Layout from '../layout/Layout.js';
-import Footer from '../layout/Footer.js';
+import Layout from './Layout.js';
+import Footer from './Footer.js';
 
 function Blog({ postTitle, postDate, postPictureUrl, tags, html }) {
   return (

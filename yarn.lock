@@ -1122,6 +1122,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+
 boxen@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/boxen/-/boxen-0.6.0.tgz#8364d4248ac34ff0ef1b2f2bf49a6c60ce0d81b6"
@@ -2655,7 +2659,7 @@ faye-websocket@>=0.6.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fbjs@^0.8.1, fbjs@^0.8.4:
+fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.9:
   version "0.8.9"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.9.tgz#180247fbd347dcc9004517b904f865400a0c8f14"
   dependencies:
@@ -2811,6 +2815,10 @@ flat-cache@^1.2.1:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -5193,6 +5201,12 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
+prop-types@^15.5.0:
+  version "15.5.8"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
+  dependencies:
+    fbjs "^0.8.9"
+
 prr@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
@@ -5305,13 +5319,14 @@ react-hot-loader@^3.0.0-beta.2:
     redbox-react "^1.2.5"
     source-map "^0.4.4"
 
-react-mdl@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/react-mdl/-/react-mdl-1.9.0.tgz#e7f285c68639cab40f0c9fff0e91ec605563c4e8"
+react-mdl@^1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/react-mdl/-/react-mdl-1.10.2.tgz#7edc1f5312e8d25e90428f9c35e6150081c11a91"
   dependencies:
     clamp "^1.0.1"
     classnames "^2.2.3"
     lodash.isequal "^4.4.0"
+    prop-types "^15.5.0"
 
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"
