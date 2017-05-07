@@ -17,6 +17,7 @@
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
+    "superstatic": "^4.1.0",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
@@ -113,6 +114,8 @@
     "build:debug": "node tools/build.js --debug",
     "publish": "node tools/publish.js",
     "publish:debug": "node tools/publish.js --debug",
-    "start": "node tools/run.js"
+    "start": "node tools/run.js",
+    "server:prod": "npm run superstatic",
+    "superstatic": "cd public/dist && superstatic --config ../superstatic.json --port 8080 --host 0.0.0.0"
   }
 }
