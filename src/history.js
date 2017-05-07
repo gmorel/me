@@ -8,12 +8,6 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import { expect } from 'chai';
+import createHistory from 'history/createBrowserHistory';
 
-describe('test suite', () => {
-
-  it('test', () => {
-    expect(true).to.be.true;
-  });
-
-});
+export default createHistory();

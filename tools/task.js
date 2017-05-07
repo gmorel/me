@@ -1,25 +1,32 @@
 /**
  * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
+ * https://github.com/kriasoft/react-static-boilerplate
  *
- * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
+ * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-function format(time) {
-  return time.toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, '$1');
-}
+/*
+ * Minimalistic script runner. Usage example:
+ *
+ *     node tools/deploy.js
+ *     Starting 'deploy'...
+ *     Starting 'build'...
+ *     Finished 'build' in 3212ms
+ *     Finished 'deploy' in 582ms
+ */
 
-function task(name, action) {
+function run(task, action, ...args) {
+  const command = process.argv[2];
+  const taskName = command && !command.startsWith('-') ? `${task}:${command}` : task;
   const start = new Date();
-  console.log(`[${format(start)}] Starting '${name}'...`);
-  return Promise.resolve(action instanceof Function ? action() : action).then(() => {
-    const end = new Date();
-    const time = end.getTime() - start.getTime();
-    console.log(`[${format(end)}] Finished '${name}' after ${time}ms`);
-  }, err => console.error(err.stack));
+  process.stdout.write(`Starting '${taskName}'...\n`);
+  return Promise.resolve().then(() => action(...args)).then(() => {
+    process.stdout.write(`Finished '${taskName}' after ${new Date().getTime() - start.getTime()}ms\n`);
+  }, err => process.stderr.write(`${err.stack}\n`));
 }
 
-module.exports = task;
+process.nextTick(() => require.main.exports());
+module.exports = (task, action) => run.bind(undefined, task, action);
