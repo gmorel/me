@@ -16,7 +16,7 @@ function Footer() {
   var reactLogoImg = require("./react-logo.png");
 
   return (
-    <footer className="footer" ref={node => (this.root = node)}>
+    <footer className="footer" >
       <p> Copyright © {currentYear} All right reserved </p>
       <p className="made-with">
         Made with <img src={reactLogoImg}/>
