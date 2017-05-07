@@ -12,23 +12,13 @@ import React from 'react';
 import Navigation from './Navigation';
 
 class Header extends React.Component {
-
-  componentDidMount() {
-    window.componentHandler.upgradeElement(this.root);
-  }
-
-  componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.root);
-  }
-
   render() {
     return (
-      <header ref="root">
+      <header ref={node => (this.root = node)}>
         <Navigation />
       </header>
     );
   }
-
 }
 
 export default Header;

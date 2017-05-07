@@ -19,14 +19,6 @@ class Layout extends React.Component {
     className: PropTypes.string,
   };
 
-  componentDidMount() {
-    window.componentHandler.upgradeElement(this.root);
-  }
-
-  componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.root);
-  }
-
   render() {
     return (
     <div className="row" ref={node => (this.root = node)}>

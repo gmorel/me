@@ -14,7 +14,7 @@ function Footer() {
   var currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer" ref="root">
+    <footer className="footer" ref={node => (this.root = node)}>
       <p> Copyright © {currentYear} All right reserved </p>
       <p className="made-with">
         Made with <img src="/images/react-logo.png"/>

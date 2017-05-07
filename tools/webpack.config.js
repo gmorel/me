@@ -33,12 +33,8 @@ const config = {
 
   // The entry point for the bundle
   entry: [
-    /* Material Design Lite (https://getmdl.io) */
-    '!!style-loader!css-loader!react-mdl/extra/material.min.css',
     '!!style-loader!css-loader!bootstrap/dist/css/bootstrap.min.css',
     '!!style-loader!css-loader!font-awesome/css/font-awesome.min.css',
-    // '!!style-loader!css-loader',
-    'react-mdl/extra/material.min.js',
     /* The main entry point of your JavaScript application */
     './main.js',
   ],
