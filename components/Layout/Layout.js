@@ -31,7 +31,7 @@ class Layout extends React.Component {
         <div className="profile-info">
           <div className="name-job">
             <h1>Guillaume MOREL</h1>
-            <span className="job"> Lead Developer</span>
+            <span className="job">Disruptive Lead Developer</span>
           </div>
           <div className="social-icons">
             <a href="https://github.com/gmorel" title="GitHub"><i className="fa fa-github"></i> </a>

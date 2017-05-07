@@ -55,11 +55,17 @@ class HomePage extends React.Component {
     let styleSkillOOP = {
       width: '80%'
     };
+    let styleSkillSolid = {
+      width: '80%'
+    };
     let styleSkillDesignPattern = {
       width: '70%'
     };
     let styleSkillDDD = {
       width: '80%'
+    };
+    let styleSkillSOA = {
+      width: '70%'
     };
 
     return (
@@ -67,20 +73,19 @@ class HomePage extends React.Component {
         <div id="about" className="content col-md-12 fadeInUp">
           <div className="row page">
             <div className="col-md-12 col-sm-12 col-xs-12 services">
-              <h2 className="section-title">What I’m Doing</h2>
 
               <div className="service col-md-4 col-sm-6">
-                <i className="fa fa-rocket"></i>
+                <i className="fa fa-coffee"></i>
                 <span>
-                                <b>Quality Assurance</b>
-                                <p>Unit/Functional Testing</p>
+                                <b>Humility</b>
+                                <p>Always something to learn</p>
                             </span>
               </div>
               <div className="service col-md-4 col-sm-6">
                 <i className="fa fa-users"></i>
                 <span>
                                 <b>Team Management</b>
-                                <p>Grow TeamPlay</p>
+                                <p>Growing TeamPlay</p>
                             </span>
               </div>
               <div className="service col-md-4 col-sm-6">
@@ -92,24 +97,46 @@ class HomePage extends React.Component {
               </div>
 
               <div className="service col-md-4 col-sm-6">
+                <i className="fa fa-fire-extinguisher"></i>
+                <span>
+                                <b>Quality Assurance</b>
+                                <p>Unit/Functional Testing</p>
+                            </span>
+              </div>
+              <div className="service col-md-4 col-sm-6">
                 <i className="fa fa-unlock"></i>
                 <span>
                                 <b>REST API</b>
-                                <p>Interoperability</p>
+                                <p>Aiming for Interoperability</p>
                             </span>
               </div>
               <div className="service col-md-4 col-sm-6">
                 <i className="fa fa-gears"></i>
                 <span>
                                 <b>Software Architecture</b>
-                                <p>Reduce technical debt</p>
+                                <p>Reducing technical debt</p>
                             </span>
               </div>
+
               <div className="service col-md-4 col-sm-6">
                 <i className="fa fa-stethoscope"></i>
                 <span>
                                 <b>DevOps</b>
-                                <p>Docker / Linux</p>
+                                <p>AdminSys / Docker / Linux</p>
+                            </span>
+              </div>
+              <div className="service col-md-4 col-sm-6">
+                <i className="fa fa-line-chart"></i>
+                <span>
+                                <b>M.V.P.</b>
+                                <p>Minimum Viable Product</p>
+                            </span>
+              </div>
+              <div className="service col-md-4 col-sm-6">
+                <i className="fa fa-rocket"></i>
+                <span>
+                                <b>Disruptive</b>
+                                <p>Using technology to thrive</p>
                             </span>
               </div>
 
@@ -117,7 +144,7 @@ class HomePage extends React.Component {
 
             <div className="col-md-12 col-sm-12 col-xs-12 services">
               <div className="service col-md-4 col-sm-6">
-                <h3 className="section-group">Framework</h3>
+                <h3 className="section-group">Web Framework</h3>
                 <ul className="skill-list">
                   <li>
                     <h4>Symfony 3 <span>PHP7</span></h4>
@@ -143,7 +170,7 @@ class HomePage extends React.Component {
                 <h3 className="section-group">Database</h3>
                 <ul className="skill-list">
                   <li>
-                    <h4>MySQL</h4>
+                    <h4>MySQL <span>MariaDB</span></h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillMySQL}></div>
                     </div>
@@ -178,6 +205,12 @@ class HomePage extends React.Component {
                     </div>
                   </li>
                   <li>
+                    <h4>S.O.L.I.D.</h4>
+                    <div className="progress">
+                      <div className="percentage" style={styleSkillSolid}></div>
+                    </div>
+                  </li>
+                  <li>
                     <h4>Design Pattern</h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillDesignPattern}></div>
@@ -187,6 +220,12 @@ class HomePage extends React.Component {
                     <h4>Domain Driven Design <span>DDD</span></h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillDDD}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>Service Oriented Architecture <span>SOA</span></h4>
+                    <div className="progress">
+                      <div className="percentage" style={styleSkillSOA}></div>
                     </div>
                   </li>
                 </ul>
