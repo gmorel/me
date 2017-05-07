@@ -59,23 +59,6 @@ class HomePage extends React.Component {
 
     return (
       <Layout className={s.content}>
-        {/*<div*/}
-          {/*// eslint-disable-next-line react/no-danger*/}
-          {/*dangerouslySetInnerHTML={{ __html: html }}*/}
-        {/*/>*/}
-        {/*<h4>Articles</h4>*/}
-        {/*<ul>*/}
-          {/*{this.props.articles.map(article =>*/}
-            {/*<li key={article.url}>*/}
-              {/*<a href={article.url}>{article.title}</a>*/}
-              {/*by {article.author}*/}
-            {/*</li>,*/}
-          {/*)}*/}
-        {/*</ul>*/}
-        {/*<p>*/}
-          {/*<br /><br />*/}
-        {/*</p>*/}
-
         <div id="about" className="content col-md-12 fadeInUp">
           <div className="row page">
             <div className="col-md-12 col-sm-12 col-xs-12 services">
