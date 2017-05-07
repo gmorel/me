@@ -17,14 +17,14 @@ const webpack = require('webpack');
 const task = require('./task');
 const config = require('./config');
 
-// Copy ./index.html into the /public folder
+// Copy ./index.html into the /public/dist folder
 const html = task('html', () => {
   const webpackConfig = require('./webpack.config');
   const assets = JSON.parse(fs.readFileSync('./public/dist/assets.json', 'utf8'));
   const template = fs.readFileSync('./public/index.ejs', 'utf8');
   const render = ejs.compile(template, { filename: './public/index.ejs' });
   const output = render({ debug: webpackConfig.debug, bundle: assets.main.js, config });
-  fs.writeFileSync('./public/index.html', output, 'utf8');
+  fs.writeFileSync('./public/dist/index.html', output, 'utf8');
 });
 
 // Generate sitemap.xml

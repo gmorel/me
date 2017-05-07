@@ -20,11 +20,13 @@ class Layout extends React.Component {
   };
 
   render() {
+    var gmorelLogoImg = require("./gmorel-transparency.png");
+
     return (
     <div className="row" ref={node => (this.root = node)}>
       <div className="profile col-md-3 wow fadeInDown">
         <div className="profile-image">
-          <img src="/images/gmorel-transparency.png"/>
+          <img src={gmorelLogoImg}/>
         </div>
         <div className="profile-info">
           <div className="name-job">

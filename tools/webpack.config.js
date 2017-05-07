@@ -35,6 +35,9 @@ const config = {
   entry: [
     '!!style-loader!css-loader!bootstrap/dist/css/bootstrap.min.css',
     '!!style-loader!css-loader!font-awesome/css/font-awesome.min.css',
+    '!!style-loader!css-loader!../public/css/reset.css',
+    '!!style-loader!css-loader!../public/css/magnific-popup.css',
+    '!!style-loader!css-loader!../public/css/style.css',
     /* The main entry point of your JavaScript application */
     './main.js',
   ],
@@ -42,7 +45,7 @@ const config = {
   // Options affecting the output of the compilation
   output: {
     path: path.resolve(__dirname, '../public/dist'),
-    publicPath: isDebug ? `http://localhost:${process.env.PORT || 3000}/dist/` : '/dist/',
+    publicPath: isDebug ? `http://localhost:${process.env.PORT || 3000}/` : '/',
     filename: isDebug ? '[name].js?[hash]' : '[name].[hash].js',
     chunkFilename: isDebug ? '[id].js?[chunkhash]' : '[id].[chunkhash].js',
     sourcePrefix: '  ',
