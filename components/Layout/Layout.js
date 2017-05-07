@@ -34,10 +34,10 @@ class Layout extends React.Component {
             <span className="job"> Lead Developer</span>
           </div>
           <div className="social-icons">
-            <a href="https://github.com/gmorel"><i className="fa fa-github"></i> </a>
-            <a href="https://twitter.com/guilmorel"><i className="fa fa-twitter"></i> </a>
-            <a href="https://www.linkedin.com/in/guillaume-morel-13299a108"><i className="fa fa-linkedin"></i> </a>
-            <a href="https://www.viadeo.com/p/0023trofou7g5bi/"><i className="fa fa-viadeo"></i> </a>
+            <a href="https://github.com/gmorel" title="GitHub"><i className="fa fa-github"></i> </a>
+            <a href="https://twitter.com/guilmorel" title="Twitter"><i className="fa fa-twitter"></i> </a>
+            <a href="https://www.linkedin.com/in/guillaume-morel" title="LinkedIn"><i className="fa fa-linkedin"></i> </a>
+            <a href="https://www.viadeo.com/p/0023trofou7g5bi/" title="Viadeo"><i className="fa fa-viadeo"></i> </a>
           </div>
         </div>
       </div>
