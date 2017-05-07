@@ -314,8 +314,9 @@ ul.skill-list h4 {
 }
 
 .service ul.skill-list h4 span {
-    color: #7F7F7F;
+  color: #7F7F7F;
 	font-size: 10px;
+  margin-left: 7px;
 }
 
 .service ul.skill-list {

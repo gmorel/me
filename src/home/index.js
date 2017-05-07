@@ -32,6 +32,13 @@ class HomePage extends React.Component {
     let styleSkillSymfony3 = {
       width: '90%'
     };
+    let styleSkillAngular4 = {
+      width: '70%'
+    };
+    let styleSkillReact = {
+      width: '50%'
+    };
+
     let styleSkillMySQL = {
       width: '90%'
     };
@@ -44,9 +51,7 @@ class HomePage extends React.Component {
     let styleSkillMongoDB = {
       width: '50%'
     };
-    let styleSkillAngular4 = {
-      width: '70%'
-    };
+
     let styleSkillOOP = {
       width: '80%'
     };
@@ -115,7 +120,7 @@ class HomePage extends React.Component {
                 <h3 className="section-group">Framework</h3>
                 <ul className="skill-list">
                   <li>
-                    <h4>Symfony 3 <span>PHP</span></h4>
+                    <h4>Symfony 3 <span>PHP7</span></h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillSymfony3}></div>
                     </div>
@@ -124,6 +129,12 @@ class HomePage extends React.Component {
                     <h4>Angular 4 (AoT/Redux)<span>Javascript</span></h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillAngular4}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>React<span>Javascript</span></h4>
+                    <div className="progress">
+                      <div className="percentage" style={styleSkillReact}></div>
                     </div>
                   </li>
                 </ul>
