@@ -1,9 +1,0 @@
-engine:
-    container_name: me.gmorel
-    build: ./docker/engine/
-    ports:
-        - "8096:3000"
-        - "8097:3001"
-    volumes:
-        - ".:/var/www:rw"
-    working_dir: "/var/www"
