@@ -1,5 +1,6 @@
 {
   "name": "app",
+  "homepage": "https://gmorel.github.io/me",
   "version": "0.0.0",
   "private": true,
   "engines": {
@@ -12,6 +13,7 @@
     "classnames": "^2.2.5",
     "fastclick": "^1.0.6",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^0.12.0",
     "history": "^4.6.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -116,6 +118,8 @@
     "publish:debug": "node tools/publish.js --debug",
     "start": "node tools/run.js",
     "server:prod": "npm run superstatic",
-    "superstatic": "cd public/dist && superstatic --config ../superstatic.json --port 8080 --host 0.0.0.0"
+    "superstatic": "cd public/dist && superstatic --config ../superstatic.json --port 8080 --host 0.0.0.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public/dist"
   }
 }
