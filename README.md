@@ -11,9 +11,8 @@ Serve production build locally
 
 #### Deploy
 
-`NODE_DEBUG=gh-pages npm run deploy --verbose`
-Copy `/home/kahn/dev/www/me/node_modules/gh-pages/.cache`
-Search for `/main.` in dist files. And replace by `/me/main.`
-Search for `.png` in dist files. And replace by `/me/aaaaa.png`
-Make sure we have `404.html` GitHub pages hack
-Push to `gh-pages` branch
+- `NODE_DEBUG=gh-pages npm run deploy --verbose`
+
+- Copy `/home/XXX/dev/www/me/node_modules/gh-pages/.cache` to `/home/XXX/dev/www/me_dist/`
+
+- Push to `gh-pages` branch
