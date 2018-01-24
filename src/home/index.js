@@ -64,7 +64,7 @@ class HomePage extends React.Component {
     let styleSkillDDD = {
       width: '80%'
     };
-    let styleSkillSOA = {
+    let styleSkillMicroService = {
       width: '70%'
     };
 
@@ -223,9 +223,9 @@ class HomePage extends React.Component {
                     </div>
                   </li>
                   <li>
-                    <h4>Service Oriented Architecture <span>SOA</span></h4>
+                    <h4>Micro Service <span>and controlled Monolith too</span></h4>
                     <div className="progress">
-                      <div className="percentage" style={styleSkillSOA}></div>
+                      <div className="percentage" style={styleSkillMicroService}></div>
                     </div>
                   </li>
                 </ul>
