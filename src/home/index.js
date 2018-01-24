@@ -36,7 +36,7 @@ class HomePage extends React.Component {
       width: '70%'
     };
     let styleSkillReact = {
-      width: '50%'
+      width: '25%'
     };
 
     let styleSkillMySQL = {
