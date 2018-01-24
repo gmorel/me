@@ -122,7 +122,7 @@ class HomePage extends React.Component {
                 <i className="fa fa-stethoscope"></i>
                 <span>
                                 <b>DevOps</b>
-                                <p>AdminSys / Docker / Linux</p>
+                                <p>Building trust</p>
                             </span>
               </div>
               <div className="service col-md-4 col-sm-6">
