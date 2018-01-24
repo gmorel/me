@@ -238,7 +238,7 @@ class HomePage extends React.Component {
               <div className="about-info">
                 <ul className="info-list">
                   <li>Location : <span>Marseille (France)</span></li>
-                  <li>Currently Learning : <span>Event Storming</span></li>
+                  <li>Currently Learning : <span>Event Storming</span> and <span>Serverless Architecture</span></li>
                 </ul>
               </div>
             </div>
