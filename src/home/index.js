@@ -128,8 +128,8 @@ class HomePage extends React.Component {
               <div className="service col-md-4 col-sm-6">
                 <i className="fa fa-line-chart"></i>
                 <span>
-                                <b>M.V.P.</b>
-                                <p>Minimum Viable Product</p>
+                                <b>Min Viable Product</b>
+                                <p>So business can experiment</p>
                             </span>
               </div>
               <div className="service col-md-4 col-sm-6">
