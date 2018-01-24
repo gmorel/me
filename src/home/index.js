@@ -29,10 +29,10 @@ class HomePage extends React.Component {
   }
 
   render() {
-    let styleSkillSymfony3 = {
+    let styleSkillSymfony = {
       width: '90%'
     };
-    let styleSkillAngular4 = {
+    let styleSkillAngular = {
       width: '70%'
     };
     let styleSkillReact = {
@@ -149,13 +149,13 @@ class HomePage extends React.Component {
                   <li>
                     <h4>Symfony 3 <span>PHP7</span></h4>
                     <div className="progress">
-                      <div className="percentage" style={styleSkillSymfony3}></div>
+                      <div className="percentage" style={styleSkillSymfony}></div>
                     </div>
                   </li>
                   <li>
                     <h4>Angular 4 (AoT/Redux)<span>Javascript</span></h4>
                     <div className="progress">
-                      <div className="percentage" style={styleSkillAngular4}></div>
+                      <div className="percentage" style={styleSkillAngular}></div>
                     </div>
                   </li>
                   <li>
