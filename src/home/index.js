@@ -49,7 +49,7 @@ class HomePage extends React.Component {
       width: '70%'
     };
     let styleSkillMongoDB = {
-      width: '50%'
+      width: '70%'
     };
 
     let styleSkillOOP = {
