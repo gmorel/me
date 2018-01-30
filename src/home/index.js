@@ -153,7 +153,7 @@ class HomePage extends React.Component {
                     </div>
                   </li>
                   <li>
-                    <h4>Angular 4 (AoT/Redux)<span>Javascript</span></h4>
+                    <h4>Angular 4 <span>AoT / Redux</span></h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillAngular}></div>
                     </div>
