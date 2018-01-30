@@ -147,7 +147,7 @@ class HomePage extends React.Component {
                 <h3 className="section-group">Web Framework</h3>
                 <ul className="skill-list">
                   <li>
-                    <h4>Symfony 4 <span>PHP7</span></h4>
+                    <h4>Symfony 4 <span>Certified (Level: Expert)</span></h4>
                     <div className="progress">
                       <div className="percentage" style={styleSkillSymfony}></div>
                     </div>
