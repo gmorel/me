@@ -1,6 +1,4 @@
-# MyApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+# gmorel.io
 
 ## Development server
 
@@ -10,11 +8,16 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
 ## Warning
 
 Using Bootstrap 3
 https://www.npmjs.com/package/bootstrap/v/3.4.1
+
+## Deploy to GitHub pages
+
+`ng deploy`
+
+You can see your deployed page at https://gmorel.github.io/me/.
+https://www.gmorel.io/
+
+See: https://github.com/angular-schule/angular-cli-ghpages
