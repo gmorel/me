@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { SoftSkillComponent } from './home/soft-skill/soft-skill.component';
+import { HardSkillComponent } from './home/hard-skill/hard-skill.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SoftSkillComponent,
+    HardSkillComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
