@@ -90,6 +90,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
+              "CNAME",
               "src/favicon.ico",
               "src/assets"
             ],
@@ -127,7 +128,8 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://gmorel.github.io/me/"
+            "baseHref": "https://gmorel.io",
+            "cname": "gmorel.io"
           }
         }
       }
