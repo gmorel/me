@@ -57,44 +57,64 @@
         <h3 class="section-group">Web Framework</h3>
         <ul class="skill-list">
           <li>
-            <app-hard-skill title="Symfony 4"
+            <app-hard-skill title="Symfony 5"
               description="Certified (Level: Expert)"
               percentage="90"></app-hard-skill>
           </li>
           <li>
-            <app-hard-skill title="Angular 4"
-                            description="AoT / Redux"
+            <app-hard-skill title="Angular 9"
+                            description="AoT / Store"
                             percentage="70"></app-hard-skill>
           </li>
           <li>
             <app-hard-skill title="React"
-                            description="Javascript"
+                            description="Redux"
                             percentage="20"></app-hard-skill>
+          </li>
+          <li>
+            <app-hard-skill title="NodeJS"
+                            description="PM2"
+                            percentage="70"></app-hard-skill>
           </li>
         </ul>
       </div>
       <div class="service col-md-4 col-sm-6">
-        <h3 class="section-group">Database</h3>
+        <h3 class="section-group">Infrastructure</h3>
         <ul class="skill-list">
           <li>
-            <app-hard-skill title="MySQL"
-                            description="MariaDB"
+            <app-hard-skill title="PostgreSQL"
+                            description="MariaDB / MySQL"
                             percentage="90"></app-hard-skill>
           </li>
           <li>
             <app-hard-skill title="ElasticSearch"
-                            description="NoSQL"
-                            percentage="70"></app-hard-skill>
-          </li>
-          <li>
-            <app-hard-skill title="Redis"
-                            description="NoSQL key/value"
+                            description="NoSQL & Full Text"
                             percentage="70"></app-hard-skill>
           </li>
           <li>
             <app-hard-skill title="Mongo DB"
                             description="NoSQL Document"
                             percentage="70"></app-hard-skill>
+          </li>
+          <li>
+            <app-hard-skill title="Redis"
+                            description="NoSQL key/value"
+                            percentage="60"></app-hard-skill>
+          </li>
+          <li>
+            <app-hard-skill title="RabbitMQ"
+                            description="Async"
+                            percentage="70"></app-hard-skill>
+          </li>
+          <li>
+            <app-hard-skill title="AWS Lambda"
+                            description="Cheap Serverless"
+                            percentage="60"></app-hard-skill>
+          </li>
+          <li>
+            <app-hard-skill title="Docker"
+                            description="Container in production"
+                            percentage="80"></app-hard-skill>
           </li>
         </ul>
       </div>
@@ -118,13 +138,18 @@
           </li>
           <li>
             <app-hard-skill title="Domain Driven Design"
-                            description="DDD"
+                            description="Pragmatic"
                             percentage="70"></app-hard-skill>
           </li>
           <li>
             <app-hard-skill title="Micro Service"
-                            description="and controlled Monolith too"
+                            description="and controlled Monolith"
                             percentage="70"></app-hard-skill>
+          </li>
+          <li>
+            <app-hard-skill title="Machine Learning"
+                            description="TensorFlow / KNN"
+                            percentage="50"></app-hard-skill>
           </li>
         </ul>
       </div>
@@ -135,16 +160,23 @@
     <div class="col-md-12 about-text">
       <div class="about-info">
         <ul class="info-list">
-          <li>Location : <span>Marseille (France)</span></li>
-          <li>Currently Learning : <span>Event Storming</span> and <span>Serverless Architecture</span></li>
+          <li>
+            Location : <span>Marseille (France)</span> but working <span>remotely </span> <img [src]="'assets/images/worldwide.svg'" alt="Available worldwide" height="20px" style="padding-bottom: 3px;"/>
+          </li>
+          <li>
+            Currently Learning : <span>Event Storming</span> and <span>AWS Infrastructure</span>
+          </li>
+          <li *ngIf="isFriday">
+            Enjoy the rest of your Friday <img [src]="'assets/images/friday.svg'" alt="Coktail" height="40px"/>
+          </li>
         </ul>
       </div>
     </div>
 
     <footer class="footer" >
-      <p> Copyright © {{ currentYear }} All right reserved </p>
+      <p> Copyright © 2004 - {{ currentYear }} All right reserved </p>
       <p class="made-with">
-        Made with <img [src]="'assets/images/angular.svg'" alt="Angular logo" height="20px"/>
+        Made with <img [src]="'assets/images/love.svg'" alt="Love" height="26px"/> using <img [src]="'assets/images/angular.svg'" alt="Angular logo" height="20px"/>
       </p>
     </footer>
   </div>

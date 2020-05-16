@@ -20,11 +20,17 @@ export class HomeComponent implements OnInit {
   faRocket: IconDefinition = faRocket;
 
   public currentYear: number;
+  public isFriday: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
     this.currentYear = new Date().getFullYear();
+
+    const today = new Date();
+    if (today.getDay() == 5) {
+      this.isFriday = true;
+    }
   }
 
 }
