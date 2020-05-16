@@ -26,16 +26,16 @@
     </div>
   </div>
 
-
   <div id="tab-container" class="col-md-9">
     <header>
       <nav>
         <ul class="top-menu wow fadeInRight">
-          <li>
-            <a class="selected" href="/">
+          <li *ngFor="let page of links$ | async">
+            <a class="selected" href="{{ page.route }}">
               <fa-icon [icon]="faUser"></fa-icon>
               <br/>
               <span class="hidden-xs"> About Me </span>
+              {{ page.title }}
             </a>
           </li>
         </ul>
