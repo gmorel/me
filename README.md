@@ -13,6 +13,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 Using Bootstrap 3
 https://www.npmjs.com/package/bootstrap/v/3.4.1
 
+## Gallery
+
+Regenerate gallery layout
+`node node_modules/angular2-image-gallery/convert.js --outputDir=src/assets/img/gallery src/assets/img/gallery/origin`
+
 ## Deploy to GitHub pages
 
 `ng deploy`
